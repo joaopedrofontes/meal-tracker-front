@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background: #286630;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  margin-right: 5rem;
+  gap: 3rem;
+}

@@ -1,0 +1,10 @@
+.sidebar {
+    width: 200px;
+    background: #f0f0f0;
+    padding: 1rem;
+    font-weight: bold;
+    height: 100%;
+  }
+  .sidebar div {
+    margin-bottom: 1rem;
+  }
