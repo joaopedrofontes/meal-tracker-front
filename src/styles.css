@@ -4,3 +4,12 @@ body {
     padding: 0;
     box-sizing: border-box;
   }
+
+
+  :root {
+    --primary-color: #2d7236;
+    --secondary-color: #f0f0f0;
+    --text-color: #ffffff;
+    --background-color: #ffffff;
+  }
+  

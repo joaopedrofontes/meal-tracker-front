@@ -1,9 +1,9 @@
 .navbar {
   display: flex;
   justify-content: flex-end;
-  background: #286630;
+  background: var(--primary-color);
   padding: 1rem;
-  color: white;
+  color: var(--text-color);
   font-weight: bold;
 }
 
