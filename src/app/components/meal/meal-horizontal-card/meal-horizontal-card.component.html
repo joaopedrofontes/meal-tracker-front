@@ -1,8 +1,8 @@
 <div class="meal-card" (click)="toggleExpanded()">
     <div class="meal-summary">
-      <span>{{ meal.name }}</span>
-      <span>{{ meal.date | date: 'shortDate' }}</span>
-      <span>{{ meal.calories }} kcal</span>
+      <span class="name">{{ meal.name }}</span>
+      <span class="date">{{ meal.date | date: 'shortDate' }}</span>
+      <span class="calories">{{ meal.calories }} kcal</span>
       <div class="expand-icon">
         <span [class.expanded]="expanded">▼</span>
       </div>
