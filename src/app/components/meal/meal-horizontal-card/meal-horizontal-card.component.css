@@ -1,0 +1,35 @@
+.meal-card {
+    width: 100%;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .meal-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .meal-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .expand-icon span {
+    transition: transform 0.3s ease;
+  }
+  
+  .expand-icon span.expanded {
+    transform: rotate(180deg);
+  }
+  
+  .meal-details {
+    margin-top: 1rem;
+    font-weight: normal;
+  }
+  
