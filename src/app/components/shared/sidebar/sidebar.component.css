@@ -1,9 +1,10 @@
 .sidebar {
     width: 200px;
-    background: #f0f0f0;
+    background: var(--primary-color);
     padding: 1rem;
     font-weight: bold;
     height: 100%;
+    color: var(--secondary-font-color);
   }
   .sidebar div {
     margin-bottom: 1rem;

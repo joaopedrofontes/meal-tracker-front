@@ -1,6 +1,7 @@
 .layout {
     display: flex;
     height: 100vh;
+    background-color: var(--secondary-color);
   }
   .content {
     flex: 1;

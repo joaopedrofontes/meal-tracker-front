@@ -1,7 +1,10 @@
 <nav class="navbar">
-    <div class="nav-right">
-      <button routerLink="/home" class="nav-button">Início</button>
-      <button routerLink="/profile" class="nav-button">Perfil</button>
+  <div class="nav-right">
+    <div class="user-toggle" (click)="toggleUserMenu()">
+      <div class="user-avatar">
+        <img src="assets/icons/user-solid.svg" alt="Usuário" class="user-icon" />
+      </div>
+      <span class="chevron" [class.expanded]="userMenuOpen">▼</span>
     </div>
-  </nav>
-  
+  </div>
+</nav>
