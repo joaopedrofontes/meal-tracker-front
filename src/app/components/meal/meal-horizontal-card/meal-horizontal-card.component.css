@@ -1,76 +1,86 @@
 .meal-card {
-    width: 100%;
-    background: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    cursor: pointer;
-    transition: box-shadow 0.3s ease;
-    user-select: none;
-  }
-  
-  .meal-card:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .meal-summary {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    gap: 1rem;
-  }
-  
-  .name {
-    flex: 2;
-    max-width: 10%;
-  }
-  
-  .date {
-    flex: 1;
-    text-align: center;
-    max-width: 10%;
-  }
-  
-  .calories {
-    flex: 1;
-    text-align: right;
-    max-width: 10%;
-  }
-  
-  .expand-icon {
-    margin-left: 1rem;
-    cursor: pointer;
-    margin-left: auto;
-  }
-  
-  .expand-icon span {
-    transition: transform 0.3s ease;
-  }
-  
-  .expand-icon span.expanded {
-    transform: rotate(180deg);
-  }
-  
-  .meal-details {
-    margin-top: 1rem;
-    font-weight: normal;
-  }
-  
-  .info-group {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .icon {
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
-  }
-  
-  .text {
-    line-height: 1.2;
-    font-size: medium;
-  }
-  
+  width: 100%;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.meal-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.meal-summary {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 1rem;
+}
+
+.name {
+  flex: 2;
+  max-width: 10%;
+}
+
+.date {
+  flex: 1;
+  text-align: center;
+  max-width: 10%;
+}
+
+.calories {
+  flex: 1;
+  text-align: right;
+  max-width: 10%;
+}
+
+.expand-icon {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.expand-icon span {
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  user-select: none;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.expand-icon span.expanded {
+  transform: rotate(180deg);
+}
+
+/* Transição suave do conteúdo */
+.meal-details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.meal-card.expanded .meal-details {
+  max-height: 500px; 
+  opacity: 1;
+}
+
+.info-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.text {
+  line-height: 1.2;
+  font-size: medium;
+}

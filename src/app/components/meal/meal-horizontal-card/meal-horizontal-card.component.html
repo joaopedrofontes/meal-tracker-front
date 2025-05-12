@@ -1,4 +1,4 @@
-<div class="meal-card" (click)="toggleExpanded()">
+<div class="meal-card" [class.expanded]="expanded" (click)="toggleExpanded()">
   <div class="meal-summary">
     <span class="name info-group">
       <img src="assets/icons/utensils-solid.svg" class="icon" alt="Refeição" />
@@ -17,15 +17,13 @@
     </div>
   </div>
 
-  @if (expanded) {
-    <div class="meal-details">
-      <ul>
-        @for (food of meal.foods; track food) {
-          <li>
-            {{ food.name }} - {{ food.amount }}g ({{ food.calories }} kcal)
-          </li>
-        }
-      </ul>
-    </div>
-  }
+  <div class="meal-details">
+    <ul>
+      @for (food of meal.foods; track food) {
+        <li>
+          {{ food.name }} - {{ food.amount }}g ({{ food.calories }} kcal)
+        </li>
+      }
+    </ul>
+  </div>
 </div>
