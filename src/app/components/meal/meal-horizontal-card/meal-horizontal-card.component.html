@@ -1,23 +1,31 @@
 <div class="meal-card" (click)="toggleExpanded()">
-    <div class="meal-summary">
-      <span class="name">{{ meal.name }}</span>
-      <span class="date">{{ meal.date | date: 'shortDate' }}</span>
-      <span class="calories">{{ meal.calories }} kcal</span>
-      <div class="expand-icon">
-        <span [class.expanded]="expanded">▼</span>
-      </div>
+  <div class="meal-summary">
+    <span class="name info-group">
+      <img src="assets/icons/utensils-solid.svg" class="icon" alt="Refeição" />
+      <span class="text">{{ meal.name }}</span>
+    </span>
+    <span class="date info-group">
+      <img src="assets/icons/calendar-solid.svg" class="icon" alt="Data" />
+      <span class="text">{{ meal.date | date: 'shortDate' }}</span>
+    </span>
+    <span class="calories info-group">
+      <img src="assets/icons/bolt-lightning-solid.svg" class="icon" alt="Calorias" />
+      <span class="text">{{ meal.calories }} kcal</span>
+    </span>
+    <div class="expand-icon">
+      <span [class.expanded]="expanded">▼</span>
     </div>
-  
-    @if (expanded) {
-      <div class="meal-details">
-        <ul>
-          @for (food of meal.foods; track food) {
-            <li>
-              {{ food.name }} - {{ food.amount }}g ({{ food.calories }} kcal)
-            </li>
-          }
-        </ul>
-      </div>
-    }
   </div>
-  
+
+  @if (expanded) {
+    <div class="meal-details">
+      <ul>
+        @for (food of meal.foods; track food) {
+          <li>
+            {{ food.name }} - {{ food.amount }}g ({{ food.calories }} kcal)
+          </li>
+        }
+      </ul>
+    </div>
+  }
+</div>

@@ -57,3 +57,20 @@
     font-weight: normal;
   }
   
+  .info-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+  
+  .text {
+    line-height: 1.2;
+    font-size: medium;
+  }
+  
