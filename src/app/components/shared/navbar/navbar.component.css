@@ -15,11 +15,15 @@
 
 
 .user-toggle {
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.user-toggle-visible {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
 }
 
 .user-avatar {

@@ -1,0 +1,41 @@
+.user-menu {
+    position: absolute;
+    top: 100%;
+    right: -5px;
+    top: calc(100% + 5px);
+    background: white;
+    color: #2e2e2e; 
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    width: 200px;
+    z-index: 1000;
+  }
+  
+  .user-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .user-menu li {
+    width: 100%;
+  }
+  
+  .user-menu button {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: inherit;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .user-menu button:hover {
+    background: #f2f2f2;
+  }
+  
