@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { UserMenuComponent } from '../../../comopnents/user/user-menu/user-menu.component';
+import { UserMenuComponent } from '../../user/user-menu/user-menu.component';
 
 @Component({
   selector: 'app-navbar',
